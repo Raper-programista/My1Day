@@ -6,22 +6,6 @@ class Main {
     Sanie s = new Sanie();
 		Sanie d = new Sanie();
 		String[] steps = Lista.getLista();
-		
-		
-
-		//for(String r : instrukcje )
-		//	System.out.println(r);
-
-	/*for(int i =0; i<10; i++){
-		
-		s.setOrientacja(s.getOrientacja().next());
-		d.setOrientacja(d.getOrientacja().previous());
-
-		System.out.println(
-			(i+1)+".s "+s+'\n'+
-			(i+1)+".d "+d+'\n'
-		);						
-	}*/
 
 	for(String step : steps){
 		Direction dir = Direction.parseDir(step.substring(0,1));

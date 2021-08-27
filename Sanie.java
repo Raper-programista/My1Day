@@ -83,10 +83,10 @@ public class Sanie{
 
 		for (int i=0; i<abs(steps); i++){
 
-			if(steps>0 && sign.equals(x)) x++;
-			if(steps<0 && sign.equals(x)) x--;
-			if(steps>0 && sign.equals(y)) y++;
-			if(steps<0 && sign.equals(y)) y--;
+			if(steps>0 && sign.equals("x")) x++;
+			if(steps<0 && sign.equals("x")) x--;
+			if(steps>0 && sign.equals("y")) y++;
+			if(steps<0 && sign.equals("y")) y--;
 
 			save();
 		}
