@@ -16,7 +16,7 @@ class Main {
 	int x = abs(s.getX());
 	int y = abs(s.getY());
 	int result = x+y;	
-	System.out.println(s);
+	System.out.println(s.deja_vu);
 	System.out.println(result);
 			
   }

@@ -5,8 +5,9 @@ public class Sanie{
 	private int x;
 	private int y;
 	private Degrees orientacja;
-	public Map<String, Integer>map = new HashMap<>();
-	public int count=0;
+	private Map<String, Integer>map = new HashMap<>();
+	private int second =0;
+	public int deja_vu;
 
 	public Sanie(int x, int y, Degrees orientacja){
 		this.x = x;
@@ -98,6 +99,6 @@ public class Sanie{
 
 			if(map.get(XY)==null)	map.put(XY, 1);
 			else	map.put(XY, map.get(XY)+1);
-			if(map.get(XY)==2) System.out.println(++count+". "+ XY+"<-");
+			if(map.get(XY)==2&& second++==0) deja_vu= abs(x) + abs(y);
 	}
 }
